@@ -1,9 +1,10 @@
 .env
 Test
 venv
-app/rag_pipeline1.py
+__pycache__
 ui/app1.py
 app/test.py
 app/__pycache__
 app/models/__pycache__
-__pycache__
+app/rag_pipeline1.py
+
