@@ -69,12 +69,15 @@ History
 ![](images/questions.png)
 
 ## 🏗️ Architecture
+<pre>
 flowchart TD
     A[User Uploads Document] --> B[Text Extraction]
     B --> C[Embeddings via Models]
     C --> D[Vector Store / Retrieval]
     D --> E[LLM for Answer Generation]
     E --> F[Streamlit UI Displays Answer]
+</pre>
+
 ## 📋 Requirements
 
 Python 3.9+
