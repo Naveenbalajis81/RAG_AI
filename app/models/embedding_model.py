@@ -5,7 +5,7 @@ embeddings_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-M
 def get_embeddings(text: str):
     return embeddings_model.embed_query(text)  # returns a list[float]
 
-##this for checking the embedding model works
+##This for checking the embedding model works
 #if __name__ == "__main__":
 #    sample_text = "Hello, this is a test sentence for embeddings."
 #    vector = get_embeddings(sample_text)
