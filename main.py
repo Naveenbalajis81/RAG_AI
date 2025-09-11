@@ -6,7 +6,7 @@ from app.utils import extract_text_from_pdf
 
 
 app = FastAPI(title="Student Document QA System")
-
+# Upload endpoint
 @app.post("/upload")
 async def upload_document(file: UploadFile = File(...)):
     """Upload PDF or TXT and store in Pinecone."""
@@ -33,7 +33,7 @@ async def upload_document(file: UploadFile = File(...)):
 
     return {"status": "success", "message": f"{file.filename} uploaded and indexed"}
 
-
+# Chat endpoint
 @app.post("/chat")
 async def chat(query: dict):
     """Answer questions using RAG pipeline."""
