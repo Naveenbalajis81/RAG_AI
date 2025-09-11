@@ -1,0 +1,9 @@
+.env
+Test
+venv
+app/rag_pipeline1.py
+ui/app1.py
+app/test.py
+app/__pycache__
+app/models/__pycache__
+__pycache__
