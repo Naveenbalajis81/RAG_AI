@@ -68,6 +68,33 @@ Q&A in Action
 History
 ![](images/questions.png)
 
+## 🏗️ Architecture
+flowchart TD
+    A[User Uploads Document] --> B[Text Extraction]
+    B --> C[Embeddings via Models]
+    C --> D[Vector Store / Retrieval]
+    D --> E[LLM for Answer Generation]
+    E --> F[Streamlit UI Displays Answer]
+## 📋 Requirements
+
+Python 3.9+
+
+Streamlit
+
+LangChain
+
+Hugging Face Transformers
+
+Other dependencies in requirements.txt
+
 ## 🤝 Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss your ideas.
+
+## 🔮 Future Improvements
+
+✅ Add support for more file formats (Word, Excel)
+
+✅ Enhance UI with file history and dark mode
+
+✅ Deploy on Hugging Face Spaces or Streamlit Cloud for live demo
