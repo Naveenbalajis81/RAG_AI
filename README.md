@@ -19,7 +19,7 @@ student-doc-qa/
 │ └── utils.py
 │── ui/ # User interface
 │ └──  app.py # streamlit
-│── images/ # Place demo screenshots here
+│── images/ 
 │ ├── demo.png
 │ └── demo1.png
 │── main.py # Entry point "FastAPI"
